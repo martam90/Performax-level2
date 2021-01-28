@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      ref="./images/favicon.ico"
+    />
+    <title>Small cinema</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="nav">
+        <div class="nav nav--top">
+          <a href="#" class="nav__brand">Small cinema</a>
+          <button class="nav__btn btn--open">&#9776;</button>
+          <button class="nav__btn btn--close">&#10005;</button>
+        </div>
+        <div class="nav nav--bottom">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#programme">Programme</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#booking">Booking</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="programme">
+        <div class="movie__container">
+          <a href="https://www.imdb.com/title/tt0126029/?ref_=fn_al_tt_1"
+            ><img
+              class="movie__img"
+              src="images/shrek.jpg"
+              alt="movie poster shrek"
+          /></a>
+          <a href="https://www.imdb.com/title/tt0381061/?ref_=fn_al_tt_1"
+            ><img
+              class="movie__img"
+              src="images/casino-royale.jpg"
+              alt="movie poster casino royale"
+          /></a>
+          <a href="https://www.imdb.com/title/tt6723592/?ref_=fn_al_tt_1"
+            ><img
+              class="movie__img"
+              src="images/tenet.jpg"
+              alt="movie poster tenet"
+          /></a>
+          <a href="https://www.imdb.com/title/tt0903624/?ref_=nv_sr_srsg_0"
+            ><img
+              class="movie__img"
+              src="images/hobbit.jpg"
+              alt="movie poster hobbit"
+          /></a>
+          <a href="tt0107290"
+            ><img
+              class="movie__img"
+              src="images/jurassic-park.jpg"
+              alt="movie poster jurassic park"
+          /></a>
+          <a href="https://www.imdb.com/title/tt0414387/?ref_=nv_sr_srsg_0"
+            ><img
+              class="movie__img"
+              src="images/pride-and-prejudice.jpg"
+              alt="movie poster pride and prejudice"
+          /></a>
+        </div>
+      </section>
+
+      <section id="booking">
+        <form method="POST" id="myForm">
+          <div class="container__wrapper">
+            <h1>Booking system</h1>
+
+            <div class="tab">
+              <label for="movie">Choose movie:</label>
+              <select name="movie" id="movie">
+                <option value="Shrek">Shrek</option>
+                <option value="Tenet">Tenet</option>
+                <option value="Casino Royale">Casino Royale</option>
+                <option value="Pride and Prejudice">Pride and Prejudice</option>
+                <option value="Jurassic Park">Jurassic Park</option>
+                <option value="Hobbit">The Hobbit</option>
+              </select>
+            </div>
+
+            <div class="tab">
+              <label for="start">Choose date:</label>
+              <input
+                type="date"
+                id="date"
+                name="booking-window-start"
+                value="2021-02-01"
+                min="2021-02-01"
+                max="2021-02-07"
+              />
+            </div>
+
+            <div class="tab">
+              <label for="hour">Choose hour:</label>
+              <select name="hour" id="hour">
+                <option value="10:00">10:00</option>
+                <option value="12:00">12:00</option>
+                <option value="14:00">14:00</option>
+                <option value="16:00">16:00</option>
+                <option value="18:00">18:00</option>
+                <option value="20:00">20:00</option>
+              </select>
+            </div>
+
+            <p class="seat__label">Choose seat</p>
+            <div class="container__buttons">
+              <button type="button" title="Available" class="container__seat">
+                1A
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                1B
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                1C
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                1D
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                1E
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                2A
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                2B
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                2C
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                2D
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                2E
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                3A
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                3B
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                3C
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                3D
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                3E
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                4A
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                4B
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                4C
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                4D
+              </button>
+              <button type="button" title="Available" class="container__seat">
+                4E
+              </button>
+            </div>
+
+            <div class="container__screen">
+              <span class="screen__text">Screen</span>
+            </div>
+
+            <input
+              type="submit"
+              form="myForm"
+              value="Submit"
+              class="input__submit"
+            />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="footer__address">
+        <a href="#header" class="footer__brand">Small cinema</a>
+        <span class="address__text">Pouliční třída 13/2047 </span>
+        <span class="address__text">Prague, 101 00</span>
+      </div>
+
+      <div class="footer__contact">
+        <i class="fas fa-phone-alt"></i>
+        <a href="#" class="" href="tel:+420-543-123-4567"
+          >Phone: +420-543-123-4567</a
+        ><br />
+        <br />
+        <i class="fas fa-envelope"></i>
+        <a href="#" class="" href="mailto:smallcinema@org.com"
+          >smallcinema@org.com</a
+        >
+      </div>
+
+      <div class="footer__icons">
+        <a href="#" class="footer__icon"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="footer__icon"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="menu.js"></script>
+
+    <script src="storage.js"></script>
+  </body>
+</html>

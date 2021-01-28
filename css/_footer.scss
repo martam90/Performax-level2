@@ -1,0 +1,45 @@
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: $spacing + 1;
+  padding: $spacing;
+  background-color: $verydark;
+
+  .footer__brand {
+    font-family: $logo-font;
+    font-size: $font-size;
+    color: $lightgray;
+    font-weight: 700;
+  }
+
+  .footer__address {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing;
+
+    .address__text {
+      color: $lightgray;
+      opacity: 0.7;
+    }
+  }
+
+  .footer__contact {
+    display: block;
+
+    .fas {
+      font-size: $font-size + 0.3;
+      margin-right: $spacing - 0.5;
+      color: $grayishblue;
+    }
+  }
+
+  .footer__icons {
+    display: flex;
+    gap: $spacing;
+
+    .fab {
+      font-size: $font-size + 0.5;
+    }
+  }
+}

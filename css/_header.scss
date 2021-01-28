@@ -1,0 +1,70 @@
+.nav {
+  background-color: $lightgray;
+}
+
+.nav--top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing;
+
+  .nav__brand {
+    font-family: $logo-font;
+    font-size: $font-size + 1;
+    color: $verydark;
+  }
+
+  .nav__btn {
+    @include nav-btn;
+
+    &.btn--close {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+
+    &.btn--open {
+      display: block;
+
+      &.active {
+        display: none;
+      }
+    }
+  }
+}
+
+.nav__list {
+  display: none;
+  gap: $spacing;
+  padding: $spacing * 2 0;
+  background-color: $darkviolet;
+
+  &.active {
+    display: block;
+  }
+
+  .nav__item {
+    width: 100%;
+  }
+
+  .nav__link {
+    display: block;
+    text-transform: uppercase;
+    padding: $spacing 0;
+    text-align: center;
+    color: $lightgray;
+    transition: $animate;
+
+    &:hover {
+      color: $grayishviolet;
+      cursor: pointer;
+      transition: $animate;
+    }
+
+    &:focus {
+      outline: 2px dotted $lightgray;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+$font-family: "Rubik, sans-serif";
+$logo-font: "Rock Salt", cursive;
+$font-size: 1rem;
+$spacing: 1.25em;
+
+$darkviolet: hsl(256, 26%, 20%);
+$grayishblue: hsl(216, 30%, 68%);
+
+$verydark: hsl(270, 9%, 17%);
+$grayishviolet: hsl(273, 4%, 51%);
+$lightgray: hsl(0, 0%, 98%);
+
+$animate: all ease-in-out 300ms;
+
+@mixin nav-btn {
+  border: 0;
+  display: block;
+  background-color: inherit;
+  font-size: $font-size + 1;
+  cursor: pointer;
+  color: $verydark;
+}
+
+@mixin seat-btn {
+  background-color: rgb(39, 250, 39);
+  cursor: pointer;
+  font-size: $font-size;
+  font-weight: 500;
+  border: 1px solid $lightgray;
+
+  &:hover {
+    background-color: rgb(69, 248, 69);
+  }
+
+  &.active {
+    background-color: rgb(245, 50, 50);
+    color: $lightgray;
+  }
+}
+
+@mixin input-submit {
+  border: 0;
+  display: block;
+  font-size: $font-size;
+  cursor: pointer;
+  background-color: $verydark;
+  color: $lightgray;
+  padding: $spacing - 0.5;
+  margin-top: $spacing * 2;
+  letter-spacing: 3px;
+  border-radius: 1.5em;
+
+  &:hover {
+    background-color: $darkviolet;
+  }
+
+  &:focus {
+    outline: 2px dotted $verydark;
+  }
+}
